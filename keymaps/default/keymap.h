@@ -4,67 +4,47 @@
 #include QMK_KEYBOARD_H
 #include "../../variables.h"
 
-// Layer Temporal
-#define TA_FNC LT(_FNC,KC_ENT)
-#define TO_SYM LT(_SYM,KC_MINS)
-#define TO_FN LT(_FN,KC_BSPC)
-#define TO_CON LT(_CON,KC_ESC)
-#define TO_PASS LT(_PASS,KC_TAB)
-#define TM_MUG LT(_MUD,KC_SPC)
-#define TM_MUA LT(_MUD,KC_LALT)
-#define TM_MUC LT(_MUD,KC_CAPS)
-#define TM_MUCS LT(_MUD,KC_F21)
+// Uniques
+#define QWERTYS TG(_QWER)
 
-// Layer Switch
-#define QWERT TG(_QWER)
-#define CONT TG(_CON)
+// Lateral Layer
+#define TO_LTOP LT(_LTOP,KC_TAB)
+#define TO_LMID LT(_LMID,KC_ESC)
+#define TO_LBOT LT(_LBOT,KC_DEL)
 
-// One shot
-// #define HYPR_L OSM(MOD_LGUI | MOD_LALT)
-// #define HYPR_R OSM(MOD_LGUI | MOD_LCTL)
-// #define HYPR_O OSM(MOD_LGUI | MOD_LCTL | MOD_LALT)
-#define HYPR_L LT(_MUD, KC_F22)
-#define HYPR_R LT(_MUD, KC_F23)
-#define HYPR_O LT(_MUD, KC_F24)
+#define TO_RSOP OSM(MOD_RALT)
+#define TO_RTOP LT(_RTOP,KC_BSLS)
+#define TO_RMID LT(_RMID,KC_ENT)
+#define TO_RBOT LT(_RBOT,KC_BSPC)
+
+// Mid layer
+#define XP_MTOP OSL(_PASS)
+
+// Bottom Modifier
+#define HY_LTOP LT(_SUPA,KC_F23)
+#define HY_LMID LT(_SUPA,KC_F22) 
+#define HY_LBOT OSM(MOD_LCTL)
+#define HY_CENT LT(_SUPA,KC_SPC)
+#define HY_RBOT OSM(MOD_LSFT)
+#define HY_RMID LT(_SUPA,KC_F21)
+#define HY_RTOP LT(_SUPA,KC_F20)
 
 // Modifier key
 #define A_RIGHT A(KC_RIGHT)
 #define A_LEFT A(KC_LEFT)
-#define C_V  C(KC_V)
-#define C_W  C(KC_W)
-#define C_A  C(KC_A)
-#define C_X  C(KC_X)
-#define C_C  C(KC_C)
-#define C_S  C(KC_S)
-#define C_Y  C(KC_Y)
-#define C_Z  C(KC_Z)
-#define C_PRIOR C(KC_PGUP)
-#define C_NEXT C(KC_PGDN)
 
+#define CT_V     C(KC_V)
+#define CT_W     C(KC_W)
+#define CT_A     C(KC_A)
+#define CT_X     C(KC_X)
+#define CT_C     C(KC_C)
+#define CT_S     C(KC_S)
+#define CT_Y     C(KC_Y)
+#define CT_Z     C(KC_Z)
+#define CT_PGUP  C(KC_PGUP)
+#define CT_PGDN  C(KC_PGDN)
 
-#define CS_V  RCS(KC_V)
-#define CS_A  RCS(KC_A)
-#define CS_X  RCS(KC_X)
-#define CS_C  RCS(KC_C)
-#define CS_S  RCS(KC_S)
-#define CS_Y  RCS(KC_Y)
-#define CS_Z  RCS(KC_Z)
-
-#define S_MPRV  S(KC_MPRV)
-#define S_MNXT  S(KC_MNXT)
-#define S_VOLD  S(KC_VOLD)
-#define S_VOLU  S(KC_VOLU)
-#define S_MPLY  S(KC_MPLY)
-#define S_MUTE  S(KC_MUTE)
-#define S_MSTP  S(KC_MSTP)
-
-// Custom OneShot
-// #define L_NAV   MO(_NAV)
-// #define L_SYM   MO(_SYM)
-
-// Modifier Layer
-#define ST_KC SFT_T(KC_DEL)
-#define ST_BSLS SFT_T(KC_BSLS)
-#define C_SCLN LCTL_T(KC_SCLN)
+// Symbols
+#define SH_SCLN  S(KC_SCLN)
 
 #endif
