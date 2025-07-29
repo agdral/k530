@@ -46,5 +46,11 @@
 
 // Symbols
 #define SH_SCLN  S(KC_SCLN)
+#define SH_COMM  S(KC_COMM)
+#define SH_DOT   S(KC_DOT)
+#define SH_LBRC  S(KC_LBRC)
+#define SH_RBRC  S(KC_RBRC)
+#define SH_0  S(KC_0)
+#define SH_9  S(KC_9)
 
 #endif
