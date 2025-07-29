@@ -47,32 +47,32 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	}
 
 	switch (keycode) {
-	case P_1: return send_oracion_enter(V_P_1);
-	case P_2:	return send_oracion_enter(V_P_2);
-	case P_3:	return send_oracion_enter(V_P_3);
-	case P_4:	return send_oracion_enter(V_P_4);
-	case P_5:	return send_oracion_enter(V_P_5);
-	case P_6:	return send_oracion_enter(V_P_6);
-	case P_7:	return send_oracion_enter(G_C1);
-	case P_8:	return send_oracion_enter(G_C2);
-	case Mail_1: return send_oracion(V_Mail_1);
-	case Mail_2: return send_oracion(V_Mail_2);
-	case Mail_3: return send_oracion(V_Mail_3);
-	case Mail_4: return send_oracion(V_Mail_4);
-	case Mail_5: return send_oracion(V_Mail_5);
-	case Pass_1: return send_oracion(V_Mail_C1);
-	case Pass_2: return send_oracion(V_Mail_C2);
-	case Pass_3: return send_oracion(V_Mail_C3);
-	case Pass_4: return send_oracion(V_Mail_C4);
-	case Pass_5: return send_oracion(V_Mail_C5);
-	case Ip_1: return send_oracion(V_IP_1);
-	case Ip_2: return send_oracion(V_IP_2);
-	case Ip_3: return send_oracion(V_IP_3);
-	case HY_LTOP:	return layer_mod_kc(MOD_LALT|MOD_LCTL|MOD_LGUI);
-	case HY_LMID:	return layer_mod_kc(MOD_LGUI|MOD_LCTL);
-	case HY_CENT:	return layer_mod_kc(MOD_LGUI);
-	case HY_RMID:	return layer_mod_kc(MOD_LGUI|MOD_LALT);
-	case HY_RTOP:	return layer_mod_kc(MOD_LALT);
+    case P_1: return send_oracion_enter(V_P_1);
+    case P_2:	return send_oracion_enter(V_P_2);
+    case P_3:	return send_oracion_enter(V_P_3);
+    case P_4:	return send_oracion_enter(V_P_4);
+    case P_5:	return send_oracion_enter(V_P_5);
+    case P_6:	return send_oracion_enter(V_P_6);
+    case P_7:	return send_oracion_enter(G_C1);
+    case P_8:	return send_oracion_enter(G_C2);
+    case Mail_1: return send_oracion(V_Mail_1);
+    case Mail_2: return send_oracion(V_Mail_2);
+    case Mail_3: return send_oracion(V_Mail_3);
+    case Mail_4: return send_oracion(V_Mail_4);
+    case Mail_5: return send_oracion(V_Mail_5);
+    case Pass_1: return send_oracion(V_Mail_C1);
+    case Pass_2: return send_oracion(V_Mail_C2);
+    case Pass_3: return send_oracion(V_Mail_C3);
+    case Pass_4: return send_oracion(V_Mail_C4);
+    case Pass_5: return send_oracion(V_Mail_C5);
+    case Ip_1: return send_oracion(V_IP_1);
+    case Ip_2: return send_oracion(V_IP_2);
+    case Ip_3: return send_oracion(V_IP_3);
+    case HY_LTOP:	return layer_mod_kc(MOD_LALT|MOD_LCTL|MOD_LGUI);
+    case HY_LMID:	return layer_mod_kc(MOD_LGUI|MOD_LCTL);
+    case HY_CENT:	return layer_mod_kc(MOD_LGUI);
+    case HY_RMID:	return layer_mod_kc(MOD_LGUI|MOD_LALT);
+    case HY_RTOP:	return layer_mod_kc(MOD_LALT);
 	}
 	return true;
 }
