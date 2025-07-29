@@ -7,9 +7,9 @@ void matrix_init_user(void) { rgb_matrix_mode(RGB_MATRIX_PIXEL_RAIN); };
 enum custom_keycodes {
 	P_1 = SAFE_RANGE,
   P_2,P_3,P_4,P_5,P_6,P_7,P_8,
-  Mail_1,Mail_2,Mail_3,Mail_4,
-  Pass_1,Pass_2,Pass_3,Pass_4,
-  Ip_1,Ip_2,Ip_3,Ip_4,
+  Mail_1,Mail_2,Mail_3,Mail_4,Mail_5,
+  Pass_1,Pass_2,Pass_3,Pass_4,Pass_5,
+  Ip_1,Ip_2,Ip_3,
 };
 
 enum layer_names {
@@ -59,14 +59,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	case Mail_2: return send_oracion(V_Mail_2);
 	case Mail_3: return send_oracion(V_Mail_3);
 	case Mail_4: return send_oracion(V_Mail_4);
+	case Mail_5: return send_oracion(V_Mail_5);
 	case Pass_1: return send_oracion(V_Mail_C1);
 	case Pass_2: return send_oracion(V_Mail_C2);
 	case Pass_3: return send_oracion(V_Mail_C3);
 	case Pass_4: return send_oracion(V_Mail_C4);
+	case Pass_5: return send_oracion(V_Mail_C5);
 	case Ip_1: return send_oracion(V_IP_1);
 	case Ip_2: return send_oracion(V_IP_2);
-	case Ip_3: return send_oracion(V_IP_0);
-	case Ip_4: return send_oracion(V_IP_0);
+	case Ip_3: return send_oracion(V_IP_3);
 	case HY_LTOP:	return layer_mod_kc(MOD_LALT|MOD_LCTL|MOD_LGUI);
 	case HY_LMID:	return layer_mod_kc(MOD_LGUI|MOD_LCTL);
 	case HY_CENT:	return layer_mod_kc(MOD_LGUI);
