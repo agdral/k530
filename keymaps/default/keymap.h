@@ -24,26 +24,17 @@
 #define XP_MTOP OSL(_PASS)
 
 // Bottom Modifier
-#define HY_LTOP LT(_SUPA, KC_F23)
-#define HY_LMID LT(_SUPA, KC_F22)
+#define HY_LTOP MT(MOD_LALT | MOD_LCTL | MOD_LGUI, KC_F23)
+#define HY_LMID MT(MOD_LGUI | MOD_LCTL, KC_F22)
 #define HY_LBOT OSM(MOD_LCTL)
-#define HY_CENT LT(_SUPA, KC_SPC)
+#define HY_CENT MT(MOD_LGUI, KC_SPC)
 #define HY_RBOT OSM(MOD_LSFT)
-#define HY_RMID LT(_SUPA, KC_F21)
-#define HY_RTOP LT(_SUPA, KC_F20)
+#define HY_RMID MT(MOD_LGUI | MOD_LALT, KC_F21)
+#define HY_RTOP MT(MOD_LALT, KC_F20)
 
 // Modifier key
 #define A_RIGHT A(KC_RIGHT)
 #define A_LEFT A(KC_LEFT)
-
-#define CT_V C(KC_V)
-#define CT_W C(KC_W)
-#define CT_A C(KC_A)
-#define CT_X C(KC_X)
-#define CT_C C(KC_C)
-#define CT_S C(KC_S)
-#define CT_Y C(KC_Y)
-#define CT_Z C(KC_Z)
 #define CT_PGUP C(KC_PGUP)
 #define CT_PGDN C(KC_PGDN)
 
@@ -55,5 +46,28 @@
 #define SH_RBRC S(KC_RBRC)
 #define SH_0 S(KC_0)
 #define SH_9 S(KC_9)
+
+#define CUSTOM_TOP             \
+    X(TOP_A, C(KC_X), KC_GRV)  \
+    X(TOP_B, C(KC_C), KC_1)    \
+    X(TOP_C, C(KC_V), KC_2)    \
+    X(TOP_D, C(KC_Z), KC_3)    \
+    X(TOP_E, C(KC_Y), KC_4)    \
+    X(TOP_F, C(KC_S), KC_5)    \
+    X(TOP_G, KC_MPRV, KC_6)    \
+    X(TOP_H, KC_MNXT, KC_7)    \
+    X(TOP_I, KC_VOLD, KC_8)    \
+    X(TOP_J, KC_VOLU, KC_9)    \
+    X(TOP_K, KC_VOLU, KC_0)    \
+    X(TOP_M, KC_VOLU, KC_BSLS) \
+    X(TOP_N, KC_VOLU, KC_EQL)
+
+typedef struct {
+    uint16_t keycode;
+    uint16_t normal_key;
+    uint16_t mod_key;
+} custom_top_t;
+
+#define CUSTOM_TOP_COUNT 13
 
 #endif
