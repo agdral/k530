@@ -53,8 +53,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     for (uint8_t i = 0; i < CUSTOM_TOP_COUNT; i++) {
         if (keycode == custom_top[i].keycode) {
             if (!record->event.pressed) return false;
-            uint8_t mods = get_mods();
-            if (mods) { 
+            uint8_t mods = get_mods() | get_oneshot_mods();
+            uint8_t shift = mods & MOD_MASK_SHIFT;
+            uint8_t alt   = mods & MOD_MASK_ALT;
+            bool mods_fan = (mods == shift || mods == alt || mods == 0);
+            if (!mods_fan) { 
                 tap_code16(custom_top[i].mod_key);
             } else {
                 tap_code16(custom_top[i].normal_key);

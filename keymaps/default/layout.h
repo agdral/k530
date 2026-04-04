@@ -27,8 +27,8 @@
 // Both Layout
 #define MOUSE_LAYER \
     _______,  _______,  MS_WHLL,  MS_WHLR,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  QK_BOOT, \
-    _______,  MS_WHLU,  MS_BTN1,  MS_UP  ,  MS_BTN2,  CT_PGUP,  _______,  _______,  SH_SCLN,  SH_9   ,  SH_0   ,  SH_SCLN,  _______,  _______, \
-    _______,  MS_WHLD,  MS_LEFT,  MS_DOWN,  MS_RGHT,  CT_PGDN,  _______,  KC_EQL ,  SH_LBRC,  KC_LBRC,  KC_RBRC,  SH_RBRC,            _______, \
+    _______,  MS_WHLU,  MS_BTN1,  MS_UP  ,  MS_BTN2,  CT_PGUP,  _______,  _______,  KC_COLN,  SH_9   ,  SH_0   ,  KC_EQL ,  _______,  _______, \
+    _______,  MS_WHLD,  MS_LEFT,  MS_DOWN,  MS_RGHT,  CT_PGDN,  _______,  KC_EQL ,  KC_LCBR,  KC_LBRC,  KC_RBRC,  KC_RCBR,            _______, \
     _______,  _______,  A_LEFT ,  A_RIGHT,  MS_BTN3,  _______,            _______,  KC_TILD,  KC_SCLN,  KC_GRV,   KC_QUES,            _______, \
     _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______  \
 
