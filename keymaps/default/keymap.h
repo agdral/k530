@@ -38,15 +38,8 @@
 #define CT_PGUP C(KC_PGUP)
 #define CT_PGDN C(KC_PGDN)
 
-// Symbols
-#define SH_SCLN S(KC_SCLN)
-#define SH_COMM S(KC_COMM)
-#define SH_DOT S(KC_DOT)
-#define SH_LBRC S(KC_LBRC)
-#define SH_RBRC S(KC_RBRC)
-#define SH_0 S(KC_0)
-#define SH_9 S(KC_9)
-
+// Custom Top
+#define CUSTOM_TOP_COUNT 13
 #define CUSTOM_TOP             \
     X(TOP_A, C(KC_X), KC_GRV)  \
     X(TOP_B, C(KC_C), KC_1)    \
@@ -67,7 +60,5 @@ typedef struct {
     uint16_t normal_key;
     uint16_t mod_key;
 } custom_top_t;
-
-#define CUSTOM_TOP_COUNT 13
 
 #endif
