@@ -42,20 +42,21 @@
 
 // Left Layout
 #define ARROW_LAYER \
-    _______,  XXXXXXX,  MS_WHLL,  MS_WHLR,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  QK_BOOT, \
+    _______,  XXXXXXX,  MS_WHLL,  MS_WHLR,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  RM_PREV,  RM_NEXT,  RM_TOGG,  QK_BOOT, \
     _______,  MS_WHLU,  KC_HOME,  KC_UP  ,  KC_END,   CT_PGUP,  XXXXXXX,  KC_MINS,  KC_1   ,  KC_2   ,  KC_3   ,  KC_PDOT,  XXXXXXX,  _______, \
-    _______,  MS_WHLD,  KC_LEFT,  KC_DOWN,  KC_RGHT,  CT_PGDN,  XXXXXXX,  KC_PLUS,  KC_4   ,  KC_5   ,  KC_6   ,  KC_0   ,            _______, \
+    _______,  MS_WHLD,  KC_LEFT,  KC_DOWN,  KC_RGHT,  CT_PGDN,  XXXXXXX,  KC_PLUS,  KC_4   ,  KC_5   ,  KC_6   ,  KC_0   ,            KC_ENT , \
     _______,  XXXXXXX,  A_LEFT ,  A_RIGHT,  MS_BTN3,  XXXXXXX,            XXXXXXX,  KC_ASTR,  KC_7   ,  KC_8   ,  KC_9   ,            _______, \
     _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______  \
 
 
 // Rigth Layout
 #define SUB_LAYER \
-    _______,  XXXXXXX,  RM_PREV,  RM_NEXT,  RM_TOGG,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______, \
-    _______,  RM_SPDU,  RM_SPDD,  RM_VALD,  RM_VALU,  KC_NUM ,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CT_PGUP,  KC_PSCR,  KC_HOME,  KC_END ,  _______, \
-    _______,  KC_F13 ,  KC_F14 ,  KC_F15 ,  KC_F16 ,  KC_CAPS,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CT_PGDN,  KC_PGUP,  KC_PGDN,            _______, \
-    _______,  KC_F17 ,  KC_F18 ,  KC_F19 ,  KC_F20 ,  XXXXXXX,            XXXXXXX,  XXXXXXX,  _______,  KC_INS ,  KC_DEL ,            _______, \
+    _______,  XXXXXXX,  MS_WHLL,  MS_WHLR,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  RM_SPDU,  RM_SPDD,  RM_VALD,  RM_VALU,  KC_NUM ,  _______, \
+    _______,  MS_WHLU,  KC_HOME,  KC_UP  ,  KC_END,   CT_PGUP,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CT_PGUP,  KC_PSCR,  KC_HOME,  KC_END ,  _______, \
+    KC_ENT ,  MS_WHLD,  KC_LEFT,  KC_DOWN,  KC_RGHT,  CT_PGDN,  XXXXXXX,  XXXXXXX,  KC_CAPS,  CT_PGDN,  KC_PGUP,  KC_PGDN,            _______, \
+    _______,  XXXXXXX,  A_LEFT ,  A_RIGHT,  MS_BTN3,  XXXXXXX,            XXXXXXX,  XXXXXXX,  KC_NUM ,  KC_INS ,  KC_DEL ,            _______, \
     _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______  \
+
 
 
 #endif

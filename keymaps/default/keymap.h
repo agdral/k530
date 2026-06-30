@@ -46,14 +46,14 @@
     X(TOP_C, C(KC_V), KC_2)    \
     X(TOP_D, C(KC_Z), KC_3)    \
     X(TOP_E, C(KC_Y), KC_4)    \
-    X(TOP_F, C(KC_S), KC_5)    \
-    X(TOP_G, KC_MPRV, KC_6)    \
-    X(TOP_H, KC_MNXT, KC_7)    \
-    X(TOP_I, KC_VOLD, KC_8)    \
-    X(TOP_J, KC_VOLU, KC_9)    \
+    X(TOP_F, C(KC_L), KC_5)    \
+    X(TOP_G, C(KC_S), KC_6)    \
+    X(TOP_H, KC_MPRV, KC_7)    \
+    X(TOP_I, KC_MNXT, KC_8)    \
+    X(TOP_J, KC_VOLD, KC_9)    \
     X(TOP_K, KC_VOLU, KC_0)    \
-    X(TOP_M, KC_VOLU, KC_BSLS) \
-    X(TOP_N, KC_VOLU, KC_EQL)
+    X(TOP_M, KC_MUTE, KC_BSLS) \
+    X(TOP_N, KC_MPLY, KC_EQL)
 
 typedef struct {
     uint16_t keycode;

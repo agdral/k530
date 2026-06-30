@@ -88,6 +88,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;
+
+        case XP_MTOP:
+            if (toggle_func) {
+                return false;
+            }
+            return true;
+
         default:
             return true;
     }
